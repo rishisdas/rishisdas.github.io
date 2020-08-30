@@ -35,3 +35,7 @@ This was accomplished as shown in the following repositories:
 [Git Diff Comparison](https://github.com/BioGearsEngine/core/compare/f/rdas-NasalDrugAdmin...rishisdas:f/rdas-NasalDrugAdmin)
 
 [Pull Request](https://github.com/BioGearsEngine/core/pull/48)
+
+To use the code and run any simulations: BioGears is required
+
+[Build Instructions](https://github.com/BioGearsEngine/core/wiki/Build-Instructions)
