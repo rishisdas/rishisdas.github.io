@@ -1,16 +1,16 @@
-#### Introduction
+## Introduction
 
 Up until the recent COVID-19 pandemic the greatest social/medical crisis in the United States has been the opioid epidemic, taking 128 lives a day per the CDC. 
 Two of the high-level BioGears objectives are lowering the barrier to create medical training content and training the military. 
 I believe that a clinically relevant comprehensive model of the naloxone reversal of fentanyl-induced respiratory depression could serve both as a training tool for emergency medical personnel as well as a predictive tool for the dose and frequency of nasally administered naloxone. 
 Current guidelines for nasal naloxone usage are ambiguous and dependent on a wait-and-see approach instead of a high-fidelity data-driven predictive model, which risks under-usage of the life-saving drug due to basic human error.
 
-#### Description of Work
+## Description of Work
 
 This project was conducted as a part of Google Summer of Code 2020. 
 The main addition this project presents to the BioGears Engine is a model for the systemic absorption of substances through a nasal pathway, which can be compared to the currently available intravenous and oral models in the engine. 
 
-# This involved the following:
+## This involved the following:
 
 1. Configuration of BioGears patient action files to include nasal administration (SESubstanceNasalDose.cpp/h, Drugs.h)
 
