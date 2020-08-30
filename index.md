@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+#### Introduction
 
-You can use the [editor on GitHub](https://github.com/rishisdas/rishisdas.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Up until the recent COVID-19 pandemic the greatest social/medical crisis in the United States has been the opioid epidemic, taking 128 lives a day per the CDC. 
+Two of the high-level BioGears objectives are lowering the barrier to create medical training content and training the military. 
+I believe that a clinically relevant comprehensive model of the naloxone reversal of fentanyl-induced respiratory depression could serve both as a training tool for emergency medical personnel as well as a predictive tool for the dose and frequency of nasally administered naloxone. 
+Current guidelines for nasal naloxone usage are ambiguous and dependent on a wait-and-see approach instead of a high-fidelity data-driven predictive model, which risks under-usage of the life-saving drug due to basic human error.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### Description of Work
 
-### Markdown
+This project was conducted as a part of Google Summer of Code 2020. 
+The main addition this project presents to the BioGears Engine is a model for the systemic absorption of substances through a nasal pathway, which can be compared to the currently available intravenous and oral models in the engine. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# This involved the following:
 
-```markdown
-Syntax highlighted code block
+1. Configuration of BioGears patient action files to include nasal administration (SESubstanceNasalDose.cpp/h, Drugs.h)
 
-# Header 1
-## Header 2
-### Header 3
+2. Incorporation of ElapsedTime variable in PatientActions.xsd
 
-- Bulleted
-- List
+3. Creation of mathematical nasal disposition model using a solution of differential equations in Drugs.cpp
 
-1. Numbered
-2. List
+4. Linkage of nasal model output to BioGears systemic circulation in Drugs.cpp
 
-**Bold** and _Italic_ and `Code` text
+5. Adjustment of model rate constants to non-carrier administered naloxone in Drugs.cpp
 
-[Link](url) and ![Image](src)
-```
+6. Creation of test case scenario files to run simulations based on the model (.xml scenario files)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+7. Validation of pharmacokinetic curve for naloxone based on literature data
 
-### Jekyll Themes
+This was accomplished as shown in the following repositories:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rishisdas/rishisdas.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[Main Github Repository](https://github.com/rishisdas/core/tree/f/rdas-NasalDrugAdmin)
 
-### Support or Contact
+[Commits](https://github.com/rishisdas/core/commits/f/rdas-NasalDrugAdmin)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[Git Diff Comparison](https://github.com/BioGearsEngine/core/compare/f/rdas-NasalDrugAdmin...rishisdas:f/rdas-NasalDrugAdmin)
+
+[Pull Request](https://github.com/BioGearsEngine/core/pull/48)
