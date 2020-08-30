@@ -8,7 +8,7 @@ Current guidelines for nasal naloxone usage are ambiguous and dependent on a wai
 ## Description of Work
 
 This project was conducted as a part of Google Summer of Code 2020. 
-The main addition this project presents to the BioGears Engine is a model for the systemic absorption of substances through a nasal pathway, which can be compared to the currently available intravenous and oral models in the engine. 
+The main addition this project presents to the BioGears Engine is a model for the systemic absorption of substances through a nasal pathway, which can be compared to the currently available intravenous and oral models in the engine. The use of this model is centered around naloxone and its reversal of fentanyl-induced respiratory depression, however, further adjustments of the model can allow for adjustment of the model to work for other nasally administered drugs. The rough methodology used to create the oral administration path was used for this nasal path with some modifications, however, the model itself was entirely different due to a clear need to adapt to different validation data.
 
 ## This involved the following:
 
